@@ -61,6 +61,14 @@ const Home: React.FC = () => {
             ))}
           </Carousel>
         </div>
+        
+        <Card style={{ marginTop: 20 }} >
+          帖子
+          <Divider />
+          <Card>
+            
+          </Card>
+        </Card>
 
         <Card className="welcome-card">
           <div className="card-header">
