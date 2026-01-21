@@ -1,0 +1,222 @@
+
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.carousel-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 200px;
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.welcome-card {
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+}
+
+.p1class {
+  color: #cd9eea;
+  font-size: 25px;
+  margin-left: 16px;
+  margin-right: 12px;
+}
+
+.p2class {
+  color: #b3b1b1;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.p3class {
+  color: #a5a3a38c;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.consultant-profile-card {
+  position: relative;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 16px;
+  width: 93%;
+}
+
+.card-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: 1; /* 底层 */
+}
+
+.profile-info {
+  display: flex;
+  align-items: center; /* 垂直居中头像和文字 */
+  padding: none;
+  height: 100%;
+  position: relative;
+  z-index: 2; 
+}
+
+.profile-avatar {
+  flex-shrink: 0; /* 避免头像缩小 */
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+/* 右边文字信息 */
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 姓名在上，次数在下 */
+  margin-left: 15px;
+  height: 80px; /* 与头像大小一致 */
+  width:100%; /* 占满剩余空间 */
+}
+
+.profile-name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* 帮助人数 */
+.profile-count {
+  color: #888;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+/* 标签区域 */
+.profile-tags {
+  text-align: left;
+  margin: 12px 0;
+}
+
+
+.tag-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ca9ce0;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* 擅长 */
+.profile-skills {
+  color: #999;
+  margin: 12px 0 20px;
+  font-size: 14px;
+  text-align: left;     /* 关键 */
+  width: 100%;          /* 保证占满一行 */
+}
+
+.consult-button {
+  background-color: #edc7e9;
+}
+
+/* 自定义轮播图左右箭头 */
+.slick-arrow {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+  z-index: 2 !important;
+  opacity: 0.9 !important;
+}
+
+.slick-arrow:hover {
+  opacity: 1 !important;
+  background: #f9f9f9 !important;
+}
+
+/* 隐藏 Slick 默认的伪元素箭头（通常是小三角） */
+.slick-arrow::before {
+  display: none !important;
+}
+
+/* 左箭头位置 */
+.slick-prev {
+  left: -18px !important;
+}
+
+/* 首页不显示左箭头，末页不显示右箭头 */
+.slick-arrow.slick-disabled {
+  display: none !important;
+}
+
+/* 右箭头位置 */
+.slick-next {
+  right: -18px !important;
+}
+
+/* 代替默认图标 */
+.slick-prev,
+.slick-next {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: auto !important;
+  height: auto !important;
+  font-size: 24px !important;
+  color: #888 !important;
+  opacity: 0.8 !important;
+  z-index: 2 !important;
+  padding: 0 !important;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  opacity: 1 !important;
+  color: #555 !important;
+}
+
+.slick-prev::after {
+  content: "‹";
+}
+
+.slick-next::after {
+  content: "›";
+}

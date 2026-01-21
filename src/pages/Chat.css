@@ -1,0 +1,12 @@
+.chat-page {
+  width: 100%;
+  max-width: 900px;          /* 固定聊天窗口宽度 */
+  height: 600px;             /* 固定整体高度（关键） */
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;          /* 防止内容溢出 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
